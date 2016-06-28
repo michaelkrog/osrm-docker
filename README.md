@@ -18,7 +18,7 @@ docker run \
   -d
   -p 5000:5000
   -e PBF_RESOURCE="http://download.geofabrik.de/europe/luxembourg-latest.osm.pbf"
-  timms/osrm-docker
+  codezoo/osrm-docker
 ```
 
 ### Using a data container
@@ -31,7 +31,7 @@ Run your data container. The data container will keep your map files even if you
 docker run \
     -v /data \
     --name osrm-data \
-    timms/osrm-docker:latest \
+    codezoo/osrm-docker:latest \
     echo "running data container..."
 ```
 
@@ -42,7 +42,7 @@ docker run \
     -d \
     --volumes-from osrm-data \
     -p 5000:5000 \
-    timms/osrm-docker:latest \
+    codezoo/osrm-docker:latest \
     ./run.sh \
         Barcelona \
         "https://s3.amazonaws.com/metro-extracts.mapzen.com/barcelona_spain.osm.pbf"

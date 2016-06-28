@@ -1,2 +1,2 @@
 build:
-	docker build -t timms/osrm-docker .
+	docker build -t codezoo/osrm-docker:5.2.6 .
