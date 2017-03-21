@@ -18,7 +18,7 @@ docker run \
   -d
   -p 5000:5000
   -e PBF_RESOURCE="http://download.geofabrik.de/europe/luxembourg-latest.osm.pbf"
-  codezoo/osrm-docker
+  michaelkrog/osrm-docker
 ```
 
 ### Using a data container
